@@ -1,0 +1,28 @@
+simpletimer.c
+
+https://github.com/jamieduk/Simple-Timer-For-Ubuntu
+
+
+sudo apt update && sudo apt install -y mpg123 libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+
+
+gcc -o simple-timer simpletimer.c `pkg-config --cflags --libs gtk+-3.0`
+
+
+sudo chmod +x simple-timer
+
+
+./simple-timer
+
+
+
+to convert wav to mp3 file
+
+ffmpeg -i sounds/alarm.wav -codec:a libmp3lame -qscale:a 2 sounds/alarm.mp3
+
+
+
+
+
+
+
